@@ -1,6 +1,22 @@
-<title>FW-DevelFree</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Ing. Francesco Marchianò – Senior Embedded Software Engineer e Firmware Architect a Lodi. C/C++, Embedded Linux, Yocto, RTOS, CAN/UDS, IoT.">
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Firmware Embedded Lodi · Ing. Francesco Marchianò | FW-DevelFree</title>
+<meta name="description" content="Ing. Francesco Marchianò, Firmware Architect e Senior Embedded Software Engineer a Lodi. Sviluppo firmware C/C++, Embedded Linux Yocto, RTOS, CAN/UDS, Modbus e IoT per aziende in Lombardia e Nord Italia.">
+<link rel="canonical" href="https://fw-develfree.com/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ing. Francesco Marchianò">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fw-develfree.com/">
+<meta property="og:title" content="FW-DevelFree · Ing. Francesco Marchianò, Firmware Architect">
+<meta property="og:description" content="Ing. Francesco Marchianò, Firmware Architect e Senior Embedded Software Engineer a Lodi. Sviluppo firmware C/C++, Embedded Linux Yocto, RTOS, CAN/UDS, Modbus e IoT per aziende in Lombardia e Nord Italia.">
+<meta property="og:image" content="https://fw-develfree.com/og-image.jpg">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d1110">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://fw-develfree.com/#studio", "name": "FW-DevelFree", "url": "https://fw-develfree.com/", "description": "Studio di ingegneria elettronica: sviluppo firmware e sistemi embedded, Embedded Linux, RTOS, bus di campo e IoT.", "telephone": "+39 333 310 7313", "email": "francesco.marchiano@fw-develfree.com", "address": {"@type": "PostalAddress", "addressLocality": "Lodi", "addressRegion": "LO", "addressCountry": "IT"}, "areaServed": ["Lombardia", "Nord Italia", "Italia"], "founder": {"@id": "https://fw-develfree.com/#francesco"}, "knowsAbout": ["Firmware", "Embedded Linux", "Yocto Project", "FreeRTOS", "C++", "CAN bus", "UDS", "Modbus", "IoT", "OTA"]}, {"@type": "Person", "@id": "https://fw-develfree.com/#francesco", "name": "Francesco Marchianò", "honorificPrefix": "Ing.", "jobTitle": "Senior Embedded Software Engineer e Firmware Architect", "worksFor": {"@id": "https://fw-develfree.com/#studio"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Politecnico di Bari"}, "sameAs": ["https://www.linkedin.com/in/francesco-marchian%C3%B2-087b7730/", "https://github.com/Framar72"]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -245,6 +261,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 }
 @media (max-width:480px){.facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 16px}.facts b{font-size:24px}.term{width:94%}.portrait{width:78%}}
 </style>
+</head>
+<body>
 
 <nav class="nav" aria-label="Menu">
   <div class="wrap">
@@ -602,7 +620,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     try{localStorage.setItem('fwd-lang',l)}catch(e){}
   }
   var saved=null;try{saved=localStorage.getItem('fwd-lang')}catch(e){}
-  setLang(saved||((navigator.language||'it').slice(0,2)==='it'?'it':'en'));
+  setLang(saved==='en'?'en':'it');
   document.querySelectorAll('[data-set]').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
 
   /* copia */
@@ -645,3 +663,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   par();
 })();
 </script>
+
+</body>
+</html>
